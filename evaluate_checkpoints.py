@@ -58,7 +58,6 @@ def extract_answer_with_status(response):
     """
     Parse model responses and return the label plus the extraction method status.
     Status codes: 'TAG_SUCCESS', 'TAG_FALLBACK', 'REGEX_FALLBACK', 'KEYWORD_FALLBACK', 'DEFAULT_UNCERTAIN'
-    (Using the enhanced version from previous discussion)
     """
     response = response.strip()
     # Try to extract content between <answer> tags
